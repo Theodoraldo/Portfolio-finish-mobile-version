@@ -167,9 +167,8 @@ html {
 
 .lang-nest {
   display: flex;
-  gap: 12px;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   padding: 12px 9px;
   width: 303px;
   background-color: #f7f7f9;
