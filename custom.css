@@ -180,7 +180,8 @@ a:active {
 
 /* Works and About me section */
 .container {
-  margin: 114px 24px 0 24px;
+  width: 375px;
+  margin: 114px auto;
   display: grid;
   gap: 88px;
 }
@@ -190,6 +191,7 @@ a:active {
   background-color: #fff;
   padding: 16px;
   width: 327px;
+  margin: auto;
 }
 
 .card-header {
@@ -293,7 +295,7 @@ a:active {
 
 .banner {
   width: 375px;
-  margin: 114px 0 0 0;
+  margin: 114px auto;
   background-color: white;
   border-top-right-radius: 100px;
   padding: 0 24px;
