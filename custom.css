@@ -413,3 +413,8 @@ textarea {
   top: 55px;
   left: 153px;
 }
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
