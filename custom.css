@@ -212,7 +212,7 @@ a:active {
   list-style-type: none;
   color: #6070ff;
   margin-top: 16px;
-  display: flex;
+  float: left;
   gap: 8px;
 }
 
