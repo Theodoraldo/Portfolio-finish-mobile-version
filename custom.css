@@ -521,7 +521,8 @@ textarea:focus {
 
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    justify-items: start;
     column-gap: 24px;
     align-items: center;
     margin: 0 142px;
