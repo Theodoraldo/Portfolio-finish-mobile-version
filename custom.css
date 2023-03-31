@@ -38,6 +38,7 @@ nav {
 
 .mobile_skill {
   display: block;
+  margin-top: 20px;
 }
 
 .menu-list,
@@ -152,6 +153,7 @@ a:active {
 .container3 {
   display: none;
 }
+
 .category {
   list-style-type: none;
   color: #6070ff;
@@ -261,12 +263,8 @@ a:active {
   gap: 12px;
 }
 
-.mobile_skill {
-  margin-top: 20px;
-}
-
 /* Contact form */
-.contact-form {
+.contact-mobile {
   width: 378px;
   height: 779px;
   background-color: #6070ff;
@@ -337,10 +335,6 @@ textarea:focus {
   outline: none;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   header {
@@ -377,6 +371,10 @@ textarea:focus {
 
   .desktop_skill {
     display: block;
+  }
+
+  .header-details > a {
+    margin-right: 20px;
   }
 
   .menu-list {
@@ -442,12 +440,7 @@ textarea:focus {
     margin-top: 12px;
   }
 
-  .header-details > a {
-    margin-right: 20px;
-  }
-
-  .container,
-  .mobile_skills {
+  .container {
     display: none;
   }
 
@@ -561,7 +554,7 @@ textarea:focus {
     gap: 12px;
   }
 
-  .contact-form {
+  .contact-desk {
     width: auto;
     height: 846px;
     background-color: #6070ff;
@@ -571,10 +564,10 @@ textarea:focus {
     color: #fff;
     display: flex;
     justify-content: center;
-    background-image: url(images/Mobile_form_background.png);
+    background-image: url(images/Desk_form_background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: center;
   }
 
   .form-info input,
@@ -585,15 +578,4 @@ textarea:focus {
   .form-btn {
     margin-left: 25%;
   }
-
-  .contact-form {
-    background-image: url(images/Desk_form_background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }
