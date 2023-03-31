@@ -136,6 +136,20 @@ a:active {
   margin: auto;
 }
 
+.card-body:hover {
+  animation-name: card-body;
+  animation-duration: 4s;
+}
+
+@keyframes card-body {
+  from {
+    background-color: #396df2;
+  }
+  to {
+    background-color: #B3bac4;
+  }
+}
+
 .card-header {
   color: #172b4d;
   font-weight: 700;
