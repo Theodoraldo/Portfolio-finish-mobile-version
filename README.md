@@ -24,6 +24,15 @@ REQUIRED SECTIONS:
 OPTIONAL SECTIONS:
 - FAQ
 
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="./images/mylogo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Deployment to GitHub Pages</b></h3>
+
+</div>
+
 After you're finished please remove all the comments and instructions!
 -->
 <!-- TABLE OF CONTENTS -->
@@ -80,6 +89,23 @@ After you're finished please remove all the comments and instructions!
     <li><a href="https://github.com/">GitHub</a></li>
   </ul>
 </details>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://theodoraldo.github.io/mobile-first-deployment/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Walkthrough Demo <a name="live-demo"></a>
+
+- [Walkthrogh Demo Link](https://www.loom.com/share/281833cf6ad4422a95967904a35eb6a3)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
