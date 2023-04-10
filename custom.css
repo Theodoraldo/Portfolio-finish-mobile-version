@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Reset Settings */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -454,45 +454,26 @@ textarea:focus {
   }
 
   .container {
-    display: none;
-  }
-
-  .container3 {
     display: block;
     width: 75%;
     height: 100%;
     margin: 142px auto;
   }
 
-  .card-container {
+  .card-body {
     border-radius: 24px;
     background-color: #fff;
     margin-top: 142px;
+    width: 95%;
+    height: auto;
     padding: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
 
-  .card-header {
-    margin-top: 20px;
-    color: #172b4d;
-    font-weight: 700;
-    font-size: 40px;
-  }
-
-  .card-content > p {
-    color: #344563;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .category {
-    list-style-type: none;
-    color: #6070ff;
-    margin-top: 16px;
-    display: flex;
-    gap: 8px;
+  .swap {
+    order: 2;
   }
 
   .card-content .category {
