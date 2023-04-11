@@ -1,37 +1,37 @@
-const { body } = document.body;
-const menuBtn = document.querySelector('#menu-btn');
-const closeBtn = document.querySelector('#close-btn');
+const menuBtn = document.querySelector('#menu');
+const closeBtn = document.querySelector('#close');
 const menu = document.querySelector('.menu-list');
 const overlay = document.querySelector('.layer');
 
+/* Display Menu */
+menuBtn.addEventListener('click', () => {
+  menuBtn.style.display = 'none';
+  document.body.style.overflow = 'hidden';
+  closeBtn.style.display = 'inline-block';
+  menu.style.display = 'block';
+  overlay.classList.remove('hide');
+
+});
+
 /* Hides Menu */
-const closeMenu = () => {
+const menuClose = () => {
   menu.style.display = 'none';
-  body.style.overflow = 'scroll';
+  document.body.style.overflow = 'scroll';
   menuBtn.style.display = 'inline-block';
   closeBtn.style.display = 'none';
   overlay.classList.add('hide');
 };
 
-/* Display Menu */
-menuBtn.addEventListener('click', () => {
-  closeBtn.style.display = 'inline-block';
-  overlay.classList.remove('hide');
-  body.style.overflow = 'hidden';
-  menu.style.display = 'block';
-  menuBtn.style.display = 'none';
-});
-
 closeBtn.addEventListener('click', () => {
-  closeMenu();
+  menuClose();
 });
 
 /* Closes menu after item clicked */
 const navItems = document.querySelectorAll('.menu-list li a');
-if (window.innerWidth < 1000) {
+if (window.innerWidth < 500) {
   navItems.forEach((item) => {
     item.addEventListener('click', () => {
-      closeMenu();
+      menuClose();
     });
   });
 }
