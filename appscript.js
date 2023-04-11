@@ -10,7 +10,6 @@ menuBtn.addEventListener('click', () => {
   closeBtn.style.display = 'inline-block';
   menu.style.display = 'block';
   overlay.classList.remove('hide');
-
 });
 
 /* Hides Menu */
