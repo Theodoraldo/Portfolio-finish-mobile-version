@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <title>Portfolio-Mobile Fiirst</title>
   </head>
   <body>
@@ -16,20 +20,9 @@
     <header>
       <nav>
         <a href="#" class="logo">My Logo</a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="menu-open"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
+
+        <i id="menu-btn" class="uil uil-bars"></i>
+        <i id="close-btn" class="uil uil-multiply"></i>
 
         <ul class="menu-list">
           <li><a href="#cards">Portfolio</a></li>
@@ -38,6 +31,8 @@
         </ul>
       </nav>
     </header>
+
+    <div class="layer hide"></div>
 
     <!-- About Headers -->
     <section class="container1">
@@ -412,5 +407,6 @@
         </div>
       </div>
     </section>
+    <script src="appscript.js"></script>
   </body>
 </html>
