@@ -27,10 +27,18 @@ closeBtn.addEventListener('click', () => {
 
 /* Closes menu after item clicked */
 const navItems = document.querySelectorAll('.menu-list li a');
-if (window.innerWidth < 500) {
+if (window.innerWidth < 767) {
   navItems.forEach((item) => {
     item.addEventListener('click', () => {
       menuClose();
     });
+  });
+
+  // hide nav items when clicked
+  menu.addEventListener('click', () => {
+    menu.style.display = 'none';
+    document.body.style.overflow = 'scroll';
+    overlay.classList.add('hide');
+    menuBtn.style.display = 'block';
   });
 }
