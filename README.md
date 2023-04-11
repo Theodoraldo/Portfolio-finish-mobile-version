@@ -83,6 +83,14 @@ OPTIONAL SECTIONS:
 </details>
 
 <details>
+<details>
+  <summary>JavaScript</summary>
+  <ul>
+    <li><a href="https://javascript.com/">JavaScript</a></li>
+  </ul>
+</details>
+
+<details>
 <summary>GitHub</summary>
   <ul>
     <li><a href="https://github.com/">GitHub</a></li>
@@ -104,7 +112,6 @@ OPTIONAL SECTIONS:
 - [Walkthrogh Demo Link](https://www.loom.com/share/281833cf6ad4422a95967904a35eb6a3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 
@@ -201,6 +208,12 @@ Example:
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
+
+👤 **Biftu Girma**
+
+- GitHub: [@Bifabig](https://github.com/Bifabig)
+- Twitter: [@biftu94](https://twitter.com/biftu94)
+- LinkedIn: [Biftu Girma](https://www.linkedin.com/in/biftu-girma-3598a8126/)
 
 Contributions, issues, and feature requests are welcome!
 
