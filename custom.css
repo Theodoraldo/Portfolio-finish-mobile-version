@@ -24,13 +24,7 @@ nav {
   align-items: center;
   padding: 14px;
   background-color: #fff;
-}
-
-.menu-open {
-  stroke: #6070ff;
-  margin-right: 36px;
-  width: 24px;
-  height: 24px;
+  overflow: hidden;
 }
 
 .mobile_skill {
@@ -69,6 +63,7 @@ a:active {
   background-image: url(./images/header_mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .header-banner {
@@ -363,7 +358,6 @@ textarea:focus {
     background: transparent;
     width: 100%;
     height: 100%;
-    box-shadow: -2rem 2rem 3rem rgba(0, 0, 0, 0.2);
     flex-direction: column;
     z-index: 999;
   }
@@ -460,6 +454,8 @@ textarea:focus {
 
   .menu-list {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     gap: 32px;
   }
@@ -484,6 +480,10 @@ textarea:focus {
 
   span {
     display: block;
+  }
+
+  #close {
+    display: none;
   }
 
   .header-banner {
