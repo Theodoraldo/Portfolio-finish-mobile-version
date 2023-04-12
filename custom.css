@@ -6,7 +6,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
 }
 
 body {
@@ -428,6 +427,7 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    overflow: hidden;
   }
 
   .mobile_skill {
@@ -476,6 +476,21 @@ textarea:focus {
     color: #6070ff;
   }
 
+  .category li {
+    background-color: #ebebff;
+    border-radius: 5px;
+    padding: 4px 12px;
+  }
+
+  .card-sub li {
+    color: #7a869a;
+    font-size: 18px;
+  }
+
+  .d-menu ul li {
+    list-style-type: none;
+  }
+
   .desktop-menu-list li a {
     text-decoration: none;
   }
@@ -514,7 +529,7 @@ textarea:focus {
   .header-banner-info {
     font-weight: 400;
     font-size: 20px;
-    width: 920px;
+    width: 100%;
     line-height: 28px;
   }
 
@@ -563,17 +578,6 @@ textarea:focus {
 
   .card-content .category {
     text-decoration: none;
-  }
-
-  .category li {
-    background-color: #ebebff;
-    border-radius: 5px;
-    padding: 4px 12px;
-  }
-
-  .card-sub li {
-    color: #7a869a;
-    font-size: 18px;
   }
 
   .card-sub .remove {
