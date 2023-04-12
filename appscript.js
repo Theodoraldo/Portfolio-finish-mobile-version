@@ -17,5 +17,5 @@ navItems.forEach((item) => {
   item.addEventListener('click', () => {
     humburgerMenu.style.display = 'block';
     addClass.classList.remove('show-menu');
-  })
-})
+  });
+});
