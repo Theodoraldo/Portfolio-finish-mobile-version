@@ -1,44 +1,21 @@
-const menuBtn = document.querySelector('#menu');
-const closeBtn = document.querySelector('#close');
-const menu = document.querySelector('.menu-list');
-const overlay = document.querySelector('.layer');
+const humburgerMenu = document.getElementById('menu');
+const addClass = document.querySelector('.m-menu');
+const closeBtn = document.getElementById('close');
 
-/* Display Menu */
-menuBtn.addEventListener('click', () => {
-  menuBtn.style.display = 'none';
-  document.body.style.overflow = 'hidden';
-  closeBtn.style.display = 'inline-block';
-  menu.style.display = 'block';
-  overlay.classList.remove('hide');
+humburgerMenu.addEventListener('click', () => {
+  humburgerMenu.style.display = 'none';
+  addClass.classList.add('show-menu');
 });
-
-/* Hides Menu */
-const menuClose = () => {
-  menu.style.display = 'none';
-  document.body.style.overflow = 'scroll';
-  menuBtn.style.display = 'inline-block';
-  closeBtn.style.display = 'none';
-  overlay.classList.add('hide');
-};
 
 closeBtn.addEventListener('click', () => {
-  menuClose();
+  humburgerMenu.style.display = 'block';
+  addClass.classList.remove('show-menu');
 });
 
-/* Closes menu after item clicked */
-const navItems = document.querySelectorAll('.menu-list li a');
-if (window.innerWidth < 767) {
-  navItems.forEach((item) => {
-    item.addEventListener('click', () => {
-      menuClose();
-    });
-  });
-
-  // hide nav items when clicked
-  menu.addEventListener('click', () => {
-    menu.style.display = 'none';
-    document.body.style.overflow = 'scroll';
-    overlay.classList.add('hide');
-    menuBtn.style.display = 'block';
-  });
-}
+const navItems = document.querySelectorAll('.m-menu li a');
+navItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    humburgerMenu.style.display = 'block';
+    addClass.classList.remove('show-menu');
+  })
+})
