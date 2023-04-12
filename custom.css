@@ -22,17 +22,54 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 14px;
-  height: 48px;
-  width: 100%;
   background-color: #fff;
 }
 
-.menu-open {
-  stroke: #6070ff;
-  margin-right: 36px;
-  width: 24px;
-  height: 24px;
+.d-menu {
+  display: none;
+}
+
+.m-menu {
+  display: none;
+}
+
+.show-menu {
   display: block;
+  background-color: #6070ff;
+  opacity: 0.8;
+  position: fixed;
+  padding-top: 100px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+#menu,
+#close {
+  display: block;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.iconicon i {
+  color: #6070ff;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.m-menu i {
+  position: absolute;
+  top: 34px;
+  right: 38px;
+  color: #fff;
+  font-size: 25px;
 }
 
 .mobile_skill {
@@ -40,7 +77,6 @@ nav {
   margin-top: 20px;
 }
 
-.menu-list,
 .desktop_skill {
   display: none;
 }
@@ -49,18 +85,6 @@ nav {
   padding: 10px 12px;
   font-size: 20px;
   font-weight: 700;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #6070ff;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
-  color: #6070ff;
 }
 
 /* Header and toolbar section */
@@ -86,8 +110,8 @@ a:active {
   color: #172b4d;
   font-size: 40px;
   line-height: 52px;
-  width: 327px;
   margin-top: 118px;
+  overflow: hidden;
 }
 
 .header-banner-info {
@@ -116,6 +140,25 @@ a:active {
 
 .header-details > a {
   margin-right: 20px;
+}
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.mobile-menu-list li a:link,
+.mobile-menu-list li a:visited,
+.mobile-menu-list li a:hover,
+.mobile-menu-list li a:active {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 28px;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 /* Works (projects) and About me section */
@@ -293,13 +336,18 @@ a:active {
   background-position: right;
 }
 
+.contact-background {
+  overflow-y: hidden;
+}
+
 .contact-header {
   font-weight: 700;
   font-size: 40px;
   margin-top: 106px;
   line-height: 52px;
-  width: 100%;
+  width: auto;
   text-align: center;
+  overflow-y: hidden;
 }
 
 .contact-desc {
@@ -349,7 +397,11 @@ textarea:focus {
 }
 
 /* Large devices (laptops/desktops, 769px and up) */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+  header i {
+    display: block;
+  }
+
   header {
     width: 100%;
     margin: auto;
@@ -375,9 +427,9 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    overflow: hidden;
   }
 
-  .menu-open,
   .mobile_skill {
     display: none;
   }
@@ -386,24 +438,67 @@ textarea:focus {
     display: block;
   }
 
+  .d-menu {
+    display: block;
+  }
+
+  .m-menu {
+    display: none;
+  }
+
+  #menu,
+  #close {
+    display: none;
+  }
+
+  .desktop-menu-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .iconicon {
+    display: none;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
   .header-details > a {
     margin-right: 20px;
   }
 
-  .menu-list {
-    display: flex;
-    list-style-type: none;
-    gap: 32px;
-  }
-
-  .menu-list a:link,
-  .menu-list a:visited {
+  nav a:link,
+  nav a:visited,
+  nav a:hover,
+  nav a:active {
     text-decoration: none;
-    color: #344563;
+    color: #6070ff;
   }
 
-  .menu-list a:hover,
-  .menu-list a:active {
+  .category li {
+    background-color: #ebebff;
+    border-radius: 5px;
+    padding: 4px 12px;
+  }
+
+  .card-sub li {
+    color: #7a869a;
+    font-size: 18px;
+  }
+
+  .d-menu ul li {
+    list-style-type: none;
+  }
+
+  .desktop-menu-list li a {
+    text-decoration: none;
+  }
+
+  .desktop-menu-list li a:link,
+  .desktop-menu-list li a:visited,
+  .desktop-menu-list li a:hover,
+  .desktop-menu-list li a:active {
     text-decoration: none;
     color: #344563;
   }
@@ -434,7 +529,7 @@ textarea:focus {
   .header-banner-info {
     font-weight: 400;
     font-size: 20px;
-    width: 920px;
+    width: 100%;
     line-height: 28px;
   }
 
@@ -472,23 +567,17 @@ textarea:focus {
     column-gap: 30px;
   }
 
+  .card-img {
+    overflow: hidden;
+    width: 100%;
+  }
+
   .swap {
     order: 2;
   }
 
   .card-content .category {
     text-decoration: none;
-  }
-
-  .category li {
-    background-color: #ebebff;
-    border-radius: 5px;
-    padding: 4px 12px;
-  }
-
-  .card-sub li {
-    color: #7a869a;
-    font-size: 18px;
   }
 
   .card-sub .remove {
@@ -563,6 +652,10 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+
+  .contact-header {
+    overflow: hidden;
   }
 
   .form-info input,

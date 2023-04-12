@@ -2,35 +2,11 @@
 
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <div align="center">
   <img src="./images/mylogo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Deployment to GitHub Pages</b></h3>
+  <h3><b>Personal : Portfolio Project</b></h3>
 
 </div>
 
@@ -66,8 +42,6 @@ OPTIONAL SECTIONS:
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-
 <details>
   <summary>CSS</summary>
   <ul>
@@ -83,11 +57,55 @@ OPTIONAL SECTIONS:
 </details>
 
 <details>
+  <summary>JavaScript</summary>
+  <ul>
+    <li><a href="https://javascript.com/">JavaScript</a></li>
+  </ul>
+</details>
+
+<details>
 <summary>GitHub</summary>
   <ul>
     <li><a href="https://github.com/">GitHub</a></li>
   </ul>
 </details>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+install any text editor (I recommend Visual Studio Code)
+install liveServer
+
+### Setup
+
+Clone this repository to your desired folder:
+
+cd my-folder
+git clone git@github.com:https://github.com/Theodoraldo/Portfolio-finish-mobile-version.git
+
+### Install
+
+Install this project with:
+
+Install using Visual Code extention tab
+
+### Usage
+
+To run the project, execute the following command:
+
+### Run tests
+
+To run tests, run the following command:
+
+- Right-click on the Html file and click view in browser.
+- Can also click on liveServer at the bottom-right of VS code if installed
 
 <!-- LIVE DEMO -->
 
@@ -105,75 +123,6 @@ OPTIONAL SECTIONS:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-install live-server in your Editor
-
-### Setup
-
-Clone this repository to your desired folder:
-
-cd my-folder
-git clone git@github.com:https://github.com/Theodoraldo/Portfolio-finish-mobile-version.git
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -185,6 +134,16 @@ Example:
 - GitHub: [@githubhandle](https://github.com/Theodoraldo)
 - Twitter: [@twitterhandle](https://twitter.com/AsimengOse33947)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/theodore-asimeng-osei-80075125b/
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+👤 **Biftu Girma**
+
+- GitHub: [@Bifabig](https://github.com/Bifabig)
+- Twitter: [@biftu94](https://twitter.com/biftu94)
+- LinkedIn: [Biftu Girma](https://www.linkedin.com/in/biftu-girma-3598a8126/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,10 +157,6 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
@@ -212,7 +167,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project, kindly send your comments using the form in the portfolio.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,7 +175,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
+I would like to thank Biftu Girma for his contribution to the success of this portfolio.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,5 +200,4 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+s
