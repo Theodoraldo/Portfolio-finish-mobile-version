@@ -173,7 +173,7 @@ nav a:active {
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
-  width: 327px;
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -191,6 +191,62 @@ nav a:active {
     background-color: #b3bac4;
   }
 }
+
+/* Popup Styling start */
+.model-body {
+  position: relative;
+  width: 60%;
+  margin: 5% auto;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 16px;
+  z-index: 5;
+}
+
+#model-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#model-section {
+  height: 50px;
+}
+
+.line-break {
+  margin: 10px auto;
+  border: solid 1px #ebecf0;
+}
+
+.model-button {
+  padding: 6px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #396df2;
+  color: #396df2;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.model-combine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.model-content > p {
+  font-size: 10px;
+}
+
+.svg {
+  margin-left: 5px;
+}
+/* Popup Styling End*/
 
 .card-header {
   color: #172b4d;
@@ -216,6 +272,10 @@ nav a:active {
   margin-top: 16px;
   display: flex;
   gap: 8px;
+}
+
+.mobile-cat {
+  font-size: 10px;
 }
 
 .card-content .category {
@@ -359,6 +419,14 @@ nav a:active {
   line-height: 28px;
 }
 
+.popup-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #c1c7d0;
+}
+
 .form-info {
   width: 87%;
   display: flex;
@@ -468,6 +536,18 @@ textarea:focus {
     margin-right: 20px;
   }
 
+  .mobile-cat {
+    font-size: 15px;
+  }
+
+  .model-button {
+    font-size: 16px;
+  }
+
+  .model-content > p {
+    font-size: 14px;
+  }
+
   nav a:link,
   nav a:visited,
   nav a:hover,
@@ -553,6 +633,13 @@ textarea:focus {
     width: 75%;
     height: 100%;
     margin: 142px auto;
+  }
+
+  .model-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 20px;
+    padding: 10px;
   }
 
   .card-body {
