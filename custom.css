@@ -460,6 +460,14 @@ textarea {
   margin-top: 2px;
 }
 
+small {
+  color: red;
+  font-weight: bolder;
+  font-size: 14px;
+  display: none;
+  margin-top: 0;
+}
+
 input:focus,
 textarea:focus {
   outline: none;
