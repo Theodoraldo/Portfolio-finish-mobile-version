@@ -46,6 +46,17 @@ nav {
   backdrop-filter: blur(5px);
 }
 
+.popbody {
+  display: none;
+  background-color: #c1c7d0;
+  position: absolute;
+  padding-top: 100px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1500vh;
+}
+
 #menu,
 #close {
   display: block;
@@ -195,8 +206,9 @@ nav a:active {
 /* Popup Styling start */
 .model-body {
   position: relative;
-  width: 60%;
-  margin: 5% auto;
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
   padding: 16px;
   background-color: #fff;
   border-radius: 16px;
@@ -207,10 +219,6 @@ nav a:active {
   position: absolute;
   top: 30px;
   right: 30px;
-}
-
-#model-section {
-  height: 50px;
 }
 
 .line-break {
@@ -246,7 +254,8 @@ nav a:active {
 .svg {
   margin-left: 5px;
 }
-/* Popup Styling End*/
+
+/* Popup Styling End */
 
 .card-header {
   color: #172b4d;
@@ -419,14 +428,6 @@ nav a:active {
   line-height: 28px;
 }
 
-.popup-background {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  background-color: #c1c7d0;
-}
-
 .form-info {
   width: 87%;
   display: flex;
@@ -544,8 +545,15 @@ textarea:focus {
     font-size: 16px;
   }
 
-  .model-content > p {
-    font-size: 14px;
+  .model-body {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .image-img {
+    width: 60%;
+    height: 50%;
   }
 
   nav a:link,
@@ -642,6 +650,10 @@ textarea:focus {
     padding: 10px;
   }
 
+  .model-content > p {
+    font-size: 18px;
+  }
+
   .card-body {
     border-radius: 24px;
     background-color: #fff;
@@ -652,11 +664,6 @@ textarea:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-  }
-
-  .card-img {
-    overflow: hidden;
-    width: 100%;
   }
 
   .swap {
