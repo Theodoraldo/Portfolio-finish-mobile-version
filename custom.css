@@ -542,11 +542,11 @@ textarea:focus {
   }
 
   .model-button {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .model-body {
-    width: 600px;
+    width: 680px;
     height: 600px;
   }
 
@@ -562,6 +562,7 @@ textarea:focus {
     background-color: #ebebff;
     border-radius: 5px;
     padding: 4px 12px;
+    font-size: 12px;
   }
 
   .card-sub li {
@@ -650,6 +651,11 @@ textarea:focus {
 
   .model-content > p {
     font-size: 12px;
+    color: #344563;
+  }
+
+  .line-break {
+    margin-right: 16px;
   }
 
   .card-body {
