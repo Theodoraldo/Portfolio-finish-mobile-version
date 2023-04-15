@@ -344,6 +344,7 @@
         </p>
         <div class="form-input">
           <form
+            onsubmit="return myFunc()"
             id="form-ux"
             class="form-info"
             action="https://formspree.io/f/mgebnely"
@@ -359,7 +360,6 @@
             <input
               type="email"
               id="email"
-              onkeyup="dismiss()"
               name="email"
               placeholder="loremipsum@gmail.com"
               required
@@ -371,14 +371,8 @@
               maxlength="500"
               required
             ></textarea>
-            <button
-              class="show form-btn"
-              onclick="validateLowerChar()"
-              type="submit"
-            >
-              Get in touch
-            </button>
-            <small></small>
+            <button class="show form-btn" type="submit">Get in touch</button>
+            <small id="emailMessage">Hello</small>
           </form>
         </div>
       </div>
@@ -386,6 +380,6 @@
     <div class="popbody"></div>
     <script src="appscript.js"></script>
     <script src="popup.js"></script>
-    <script src="validation.js"></script>
+    <script type="text/javaScript" src="validation.js"></script>
   </body>
 </html>
