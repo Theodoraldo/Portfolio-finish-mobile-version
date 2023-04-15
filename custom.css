@@ -35,26 +35,26 @@ nav {
 
 .show-menu {
   display: block;
-  background-color: #6070ff;
-  opacity: 0.8;
+  background-color: rgb(96, 112, 255, 0.5);
+  backdrop-filter: blur(5px);
   position: fixed;
   padding-top: 100px;
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  backdrop-filter: blur(5px);
 }
 
 .popbody {
   display: none;
-  background-color: #c1c7d0;
-  position: absolute;
-  padding-top: 100px;
+  background-color: rgb(193, 199, 208, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  padding-top: 15px;
   top: 0;
   right: 0;
-  width: 100%;
-  height: 1500vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 #menu,
@@ -206,7 +206,7 @@ nav a:active {
 /* Popup Styling start */
 .model-body {
   position: relative;
-  width: 80%;
+  width: 320px;
   height: 90%;
   margin: 0 auto;
   padding: 16px;
@@ -550,18 +550,12 @@ textarea:focus {
   }
 
   .model-button {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .model-body {
-    width: 80%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .image-img {
-    width: 60%;
-    height: 50%;
+    width: 680px;
+    height: 600px;
   }
 
   nav a:link,
@@ -576,6 +570,7 @@ textarea:focus {
     background-color: #ebebff;
     border-radius: 5px;
     padding: 4px 12px;
+    font-size: 12px;
   }
 
   .card-sub li {
@@ -603,6 +598,10 @@ textarea:focus {
     padding: 10px 12px;
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .image-img {
+    height: 320px;
   }
 
   span {
@@ -659,7 +658,12 @@ textarea:focus {
   }
 
   .model-content > p {
-    font-size: 18px;
+    font-size: 12px;
+    color: #344563;
+  }
+
+  .line-break {
+    margin-right: 16px;
   }
 
   .card-body {
