@@ -111,7 +111,7 @@ To run tests, run the following command:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://theodoraldo.github.io/mobile-first-deployment/)
+- [Live Demo Link](https://theodoraldo.github.io/Portfolio-finish-mobile-version/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
