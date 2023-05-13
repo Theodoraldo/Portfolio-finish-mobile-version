@@ -153,6 +153,12 @@ nav {
   margin-right: 20px;
 }
 
+.model-button a {
+  list-style-type: none;
+  color: #396df2;
+  text-decoration: none;
+}
+
 nav a:link,
 nav a:visited,
 nav a:hover,
@@ -239,12 +245,6 @@ nav a:active {
   justify-content: center;
   align-items: center;
   margin: 5px;
-}
-
-.model-button a {
-  list-style-type: none;
-  color: #396df2;
-  text-decoration: none;
 }
 
 .model-combine {
