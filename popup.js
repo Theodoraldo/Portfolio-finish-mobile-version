@@ -10,9 +10,10 @@ const cardData = [
     caption1: 'CANOPY',
     caption2: 'Back End Dev',
     caption3: '2015',
-    cardImg: './images/Portfolio.png',
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    cardImg: './images/capstone_project.gif',
+    content: 'Cholera remains a global threat to public health and an indicator of inequity and lack of social development. This forum seeks to address key symptoms, treatment and ways it can be annihilated from the country.<br/><br/> Six experts addressed the issue, five of the were doctors and one GIS analyst',
     technology: ['html', 'css', 'javaScript'],
+    live_view: 'https://theodoraldo.github.io/Capstone-Project/index.html',
   },
 
   {
@@ -24,6 +25,7 @@ const cardData = [
     cardImg: './images/Dashboard.png',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technology: ['html', 'css', 'javaScript'],
+    live_view: '#',
   },
 
   {
@@ -35,6 +37,7 @@ const cardData = [
     cardImg: './images/Nature_Project.png',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technology: ['html', 'css', 'javaScript'],
+    live_view: '#',
   },
 
   {
@@ -46,6 +49,7 @@ const cardData = [
     cardImg: 'images/Professional_painting.png',
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technology: ['html', 'css', 'javaScript'],
+    live_view: '#',
   },
 ];
 
@@ -56,8 +60,8 @@ const firstData = [
     caption1: 'CANOPY',
     caption2: 'Back End Dev',
     caption3: '2015',
-    cardImg: './images/Portfolio.png',
-    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    cardImg: './images/capstone.JPG',
+    content: 'Cholera remains a global threat to public health and an indicator of inequity and lack of social development.',
     technology: ['html', 'css', 'javaScript'],
   },
 
@@ -98,7 +102,7 @@ const firstData = [
 cards.innerHTML = ` 
 <div class="card-body">
   <div class="card-img swap">
-  <img src="${firstData[0].cardImg}" width="100%"/>       
+  <img src="${firstData[0].cardImg}" width="100%" height="100%"/>       
   </div>
   <div>
     <h2 class="card-header">${firstData[0].header}</h2>
@@ -229,7 +233,7 @@ for (let i = 0; i < showButton.length; i += 1) {
                   <hr class="line-break" />
                   <div class="model-combine">
                     <button class="model-button live">
-                      See live
+                    <a href=${cardData[i].live_view}>See live</a>                      
                       <svg
                         class="svg"
                         width="18"
@@ -273,10 +277,11 @@ for (let i = 0; i < showButton.length; i += 1) {
         </section>
         `;
     body.appendChild(popUp);
+
+    const popClose = document.querySelector('#model-close');
+    popClose.addEventListener('click', () => {
+      body.style.display = 'none';
+      popUp.remove();
+    });
   });
 }
-
-body.addEventListener('click', () => {
-  body.style.display = 'none';
-  popUp.remove();
-});
