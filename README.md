@@ -189,10 +189,6 @@ I would like to thank Biftu Girma for his contribution to the success of this po
   - [Open the project in VS code editor]
   - [Click the live server icon at the bottom-right corner of VS code editor to lunch it ]
 
-- **[Question_2]**
-
-  - [Answer_2]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
@@ -200,4 +196,3 @@ I would like to thank Biftu Girma for his contribution to the success of this po
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-s
