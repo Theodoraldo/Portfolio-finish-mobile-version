@@ -6,10 +6,10 @@ const showButton = document.getElementsByClassName('popBtn');
 const cardData = [
   {
     id: 0,
-    header: 'Tonic',
+    header: 'Capstone Project',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
+    caption2: 'Front End Dev',
+    caption3: '2023',
     cardImg: './images/capstone_project.gif',
     content: 'Cholera remains a global threat to public health and an indicator of inequity and lack of social development. This forum seeks to address key symptoms, treatment and ways it can be annihilated from the country.<br/><br/> Six experts addressed the issue, five of the were doctors and one GIS analyst',
     technology: ['html', 'css', 'javaScript'],
@@ -56,10 +56,10 @@ const cardData = [
 const firstData = [
   {
     id: 0,
-    header: 'Tonic',
+    header: 'Capstone Project',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
+    caption2: 'Front End Dev',
+    caption3: '2023',
     cardImg: './images/capstone.JPG',
     content: 'Cholera remains a global threat to public health and an indicator of inequity and lack of social development.',
     technology: ['html', 'css', 'javaScript'],
