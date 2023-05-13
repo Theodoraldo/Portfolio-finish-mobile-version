@@ -241,6 +241,12 @@ nav a:active {
   margin: 5px;
 }
 
+.model-button a {
+  list-style-type: none;
+  color: #396df2;
+  text-decoration: none;
+}
+
 .model-combine {
   display: flex;
   justify-content: space-around;
@@ -551,6 +557,12 @@ textarea:focus {
 
   .model-button {
     font-size: 12px;
+  }
+
+  .model-button a {
+    list-style-type: none;
+    color: #396df2;
+    text-decoration: none;
   }
 
   .model-body {
