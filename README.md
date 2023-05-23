@@ -63,13 +63,6 @@
   </ul>
 </details>
 
-<details>
-<summary>GitHub</summary>
-  <ul>
-    <li><a href="https://github.com/">GitHub</a></li>
-  </ul>
-</details>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
