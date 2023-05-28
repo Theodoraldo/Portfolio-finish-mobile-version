@@ -10,22 +10,24 @@ const cardData = [
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
     caption3: '2023',
-    cardImg: './images/capstone_project.gif',
+    cardImg: './images/CapstoneProject.gif',
     content: 'Cholera remains a global threat to public health and an indicator of inequity and lack of social development. This forum seeks to address key symptoms, treatment and ways it can be annihilated from the country.<br/><br/> Six experts addressed the issue, five of the were doctors and one GIS analyst',
     technology: ['html', 'css', 'javaScript'],
     live_view: 'https://theodoraldo.github.io/Capstone-Project/index.html',
+    code_view: 'https://github.com/Theodoraldo/Capstone-Project',
   },
 
   {
     id: 1,
-    header: 'Multi-Post Stories',
+    header: 'Leaderboard Project',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
-    cardImg: './images/Dashboard.png',
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    caption2: 'Front and Back End Dev',
+    caption3: '2023',
+    cardImg: './images/Leaderboard.gif',
+    content: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. Data input from users are converted into JSON format which is stored in API server.<br/><br/> The application performs only two task, sending JSON information into API server and retrieving data stored from the API',
     technology: ['html', 'css', 'javaScript'],
-    live_view: '#',
+    live_view: 'https://theodoraldo.github.io/leaderboard-project/dist/',
+    code_view: 'https://github.com/Theodoraldo/leaderboard-project/tree/develop',
   },
 
   {
@@ -38,6 +40,7 @@ const cardData = [
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technology: ['html', 'css', 'javaScript'],
     live_view: '#',
+    code_view: '#',
   },
 
   {
@@ -50,6 +53,7 @@ const cardData = [
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technology: ['html', 'css', 'javaScript'],
     live_view: '#',
+    code_view: '#',
   },
 ];
 
@@ -67,12 +71,12 @@ const firstData = [
 
   {
     id: 1,
-    header: 'Multi-Post Stories',
+    header: 'Leaderboard Project',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
-    cardImg: './images/Dashboard.png',
-    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    caption2: 'Front and Back End Dev',
+    caption3: '2023',
+    cardImg: './images/Leaderboard.JPG',
+    content: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score.',
     technology: ['html', 'css', 'javaScript'],
   },
 
@@ -99,107 +103,29 @@ const firstData = [
   },
 ];
 
-cards.innerHTML = ` 
-<div class="card-body">
-  <div class="card-img swap">
-  <img src="${firstData[0].cardImg}" width="100%" height="100%"/>       
-  </div>
-  <div>
-    <h2 class="card-header">${firstData[0].header}</h2>
-    <ul class="card-sub">
-      <li class="remove">${firstData[0].caption1}</li>
-      <li>${firstData[0].caption2}</li>
-      <li>${firstData[0].caption3}</li>
-    </ul>
-    <div class="card-content">
-      <p>
-      ${firstData[0].content}
-      </p>
-      <ul class="category">
-        <li>${firstData[0].technology[0]}</li>
-        <li>${firstData[0].technology[1]}</li>
-        <li>${firstData[0].technology[2]}</li>
-      </ul>
-      <button class="popBtn show">See project</button>
+cards.innerHTML = firstData.map((x) => `<div class="card-body">
+    <div class="card-img swap">
+      <img src="${x.cardImg}" width="100%" height="100%"/>       
     </div>
-  </div>
-  </div>
-
-  <div class="card-body">
-  <div class="card-img swap">
-  <img src="${firstData[1].cardImg}" width="100%"/>       
-  </div>
-  <div>
-    <h2 class="card-header">${firstData[1].header}</h2>
-    <ul class="card-sub">
-      <li class="remove">${firstData[1].caption1}</li>
-      <li>${firstData[1].caption2}</li>
-      <li>${firstData[1].caption3}</li>
-    </ul>
-    <div class="card-content">
-      <p>
-      ${firstData[1].content}
-      </p>
-      <ul class="category">
-        <li>${firstData[1].technology[0]}</li>
-        <li>${firstData[1].technology[1]}</li>
-        <li>${firstData[1].technology[2]}</li>
+    <div>
+      <h2 class="card-header">${x.header}</h2>
+      <ul class="card-sub">
+        <li class="remove">${x.caption1}</li>
+        <li>${x.caption2}</li>
+        <li>${x.caption3}</li>
       </ul>
-      <button class="popBtn show">See project</button>
+      <div class="card-content">
+        <p>${x.content}</p>
+        <ul class="category">
+          <li>${x.technology[0]}</li>
+          <li>${x.technology[1]}</li>
+          <li>${x.technology[2]}</li>
+        </ul>
+        <button class="popBtn show">See project</button>
+      </div>
     </div>
-  </div>
-  </div>
-
-  <div class="card-body">
-  <div class="card-img swap">
-  <img src="${firstData[2].cardImg}" width="100%"/>       
-  </div>
-  <div>
-    <h2 class="card-header">${firstData[2].header}</h2>
-    <ul class="card-sub">
-      <li class="remove">${firstData[2].caption1}</li>
-      <li>${firstData[2].caption2}</li>
-      <li>${firstData[2].caption3}</li>
-    </ul>
-    <div class="card-content">
-      <p>
-      ${firstData[1].content}
-      </p>
-      <ul class="category">
-        <li>${firstData[2].technology[0]}</li>
-        <li>${firstData[2].technology[1]}</li>
-        <li>${firstData[2].technology[2]}</li>
-      </ul>
-      <button class="popBtn show">See project</button>
-    </div>
-  </div>
-  </div>
-
-  <div class="card-body">
-  <div class="card-img swap">
-  <img src="${firstData[3].cardImg}" width="100%"/>       
-  </div>
-  <div>
-    <h2 class="card-header">${firstData[3].header}</h2>
-    <ul class="card-sub">
-      <li class="remove">${firstData[1].caption1}</li>
-      <li>${firstData[3].caption2}</li>
-      <li>${firstData[3].caption3}</li>
-    </ul>
-    <div class="card-content">
-      <p>
-      ${firstData[3].content}
-      </p>
-      <ul class="category">
-        <li>${firstData[3].technology[0]}</li>
-        <li>${firstData[3].technology[1]}</li>
-        <li>${firstData[3].technology[2]}</li>
-      </ul>
-      <button class="popBtn show">See project</button>
-    </div>
-  </div>
-  </div>
-  `;
+  </div>`)
+  .join('');
 
 for (let i = 0; i < showButton.length; i += 1) {
   showButton[i].addEventListener('click', () => {
@@ -233,7 +159,7 @@ for (let i = 0; i < showButton.length; i += 1) {
                   <hr class="line-break" />
                   <div class="model-combine">
                     <button class="model-button live">
-                    <a href=${cardData[i].live_view}>See live</a>                      
+                    <a href=${cardData[i].live_view} target='_blank'>See live</a>                      
                       <svg
                         class="svg"
                         width="18"
@@ -251,7 +177,7 @@ for (let i = 0; i < showButton.length; i += 1) {
                       </svg>
                     </button>
                     <button class="model-button source">
-                      See source
+                    <a href=${cardData[i].code_view} target='_blank'> See source</a>
                       <span>
                       <svg
                       class="svg"
