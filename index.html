@@ -224,6 +224,7 @@
             <input
               type="text"
               name="name"
+              id="name"
               placeholder="Lorem Ipsum"
               required
               maxlength="30"
@@ -236,6 +237,7 @@
               required
             />
             <textarea
+              id="message"
               name="message"
               placeholder="Write your message here ..."
               name="textarea"
@@ -243,7 +245,7 @@
               required
             ></textarea>
             <button class="show form-btn" type="submit">Get in touch</button>
-            <small id="emailMessage">Hello</small>
+            <small id="sendData">Hello</small>
           </form>
         </div>
       </div>
@@ -251,6 +253,7 @@
     <div class="popbody"></div>
     <script src="appscript.js"></script>
     <script src="popup.js"></script>
-    <script src="validation.js"></script>
+    <script src="validation.js"></script> 
+    <script src="preservedata.js"></script>
   </body>
 </html>
