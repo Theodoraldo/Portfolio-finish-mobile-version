@@ -2,23 +2,23 @@ const sName = document.getElementById('name');
 const sEmail = document.getElementById('email');
 const sMessage = document.getElementById('message');
 
-let saveName = () => {
+const saveName = () => {
   const inputData = {
     userName: sName.value,
     userEmail: sEmail.value,
     userMessage: sMessage.value,
   };
   localStorage.setItem('InputData', JSON.stringify(inputData));
-}
+};
 
-let dataRetrieve = () => {
-  let data = JSON.parse(localStorage.getItem('InputData'));
+const dataRetrieve = () => {
+  const data = JSON.parse(localStorage.getItem('InputData'));
   if (data) {
     sName.value = data.userName;
     sEmail.value = data.userEmail;
     sMessage.value = data.userMessage;
   }
-}
+};
 
 sName.addEventListener('change', saveName);
 sEmail.addEventListener('change', saveName);
