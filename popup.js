@@ -117,8 +117,7 @@ cards.innerHTML = firstData.map((x) => `<div class="card-body">
       <div class="card-content">
         <p>${x.content}</p>
         <ul class="category">
-          ${x.technology.map((item) => 
-            `<li>${item}</li>`).join('')}
+          ${x.technology.map((item) => `<li>${item}</li>`).join('')}
         </ul>
         <button class="popBtn show">See project</button>
       </div>
@@ -150,8 +149,7 @@ for (let i = 0; i < showButton.length; i += 1) {
               <p>${cardData[i].content}</p>
               <div class="model-links-content">
                 <ul class="category mobile-cat">
-                  ${cardData[i].technology.map((item) => 
-                    `<li>${item}</li>`).join('')}
+                  ${cardData[i].technology.map((item) => `<li>${item}</li>`).join('')}
                 </ul>
                 <div>
                   <hr class="line-break" />
