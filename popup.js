@@ -32,15 +32,15 @@ const cardData = [
 
   {
     id: 2,
-    header: 'Tonic',
+    header: 'Math Magician',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
+    caption2: 'Front End Dev',
     caption3: '2015',
-    cardImg: './images/Nature_Project.png',
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'css', 'javaScript'],
-    live_view: '#',
-    code_view: '#',
+    cardImg: './images/Magicians.gif',
+    content: 'The Math Magicians application is calculator built using React. Users can use it to perform basic mathematical calculations. Very simple to use and user-friendly app for computing addition, subtraction, multiplication, division adn module operands. <br><br>It also has a random generated quotes from an API which talks about freedom.',
+    technology: ['jsx', 'css', 'react', 'redux'],
+    live_view: 'https://math-magicians-f05j.onrender.com/',
+    code_view: 'https://github.com/Theodoraldo/math-magicians',
   },
 
   {
@@ -82,13 +82,13 @@ const firstData = [
 
   {
     id: 2,
-    header: 'Tonic',
+    header: 'Math Magicians',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
-    cardImg: './images/Nature_Project.png',
-    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technology: ['html', 'css', 'javaScript'],
+    caption2: 'Front End Dev',
+    caption3: '2023',
+    cardImg: './images/Magicians.png',
+    content: 'The Math Magicians application is calculator built using React and freedom quotes from renowned people across the globe.',
+    technology: ['jsx', 'css', 'react', 'redux'],
   },
 
   {
@@ -117,9 +117,8 @@ cards.innerHTML = firstData.map((x) => `<div class="card-body">
       <div class="card-content">
         <p>${x.content}</p>
         <ul class="category">
-          <li>${x.technology[0]}</li>
-          <li>${x.technology[1]}</li>
-          <li>${x.technology[2]}</li>
+          ${x.technology.map((item) => 
+            `<li>${item}</li>`).join('')}
         </ul>
         <button class="popBtn show">See project</button>
       </div>
@@ -151,9 +150,8 @@ for (let i = 0; i < showButton.length; i += 1) {
               <p>${cardData[i].content}</p>
               <div class="model-links-content">
                 <ul class="category mobile-cat">
-                  <li>${cardData[i].technology[0]}</li>
-                  <li>${cardData[i].technology[1]}</li>
-                  <li>${cardData[i].technology[2]}</li>
+                  ${cardData[i].technology.map((item) => 
+                    `<li>${item}</li>`).join('')}
                 </ul>
                 <div>
                   <hr class="line-break" />
