@@ -77,8 +77,8 @@ nav {
 
 .m-menu i {
   position: absolute;
-  top: 34px;
-  right: 38px;
+  top: 30px;
+  right: 15px;
   color: #fff;
   font-size: 25px;
 }
@@ -93,9 +93,7 @@ nav {
 }
 
 .logo {
-  padding: 10px 12px;
-  font-size: 20px;
-  font-weight: 700;
+  width: 35%;
 }
 
 /* Header and toolbar section */
@@ -153,20 +151,6 @@ nav {
   margin-right: 20px;
 }
 
-.model-button a {
-  list-style-type: none;
-  color: #396df2;
-  text-decoration: none;
-}
-
-nav a:link,
-nav a:visited,
-nav a:hover,
-nav a:active {
-  text-decoration: none;
-  color: #6070ff;
-}
-
 .mobile-menu-list li a:link,
 .mobile-menu-list li a:visited,
 .mobile-menu-list li a:hover,
@@ -205,7 +189,7 @@ nav a:active {
   }
 
   to {
-    background-color: #b3bac4;
+    background-color: #6ab2fa;
   }
 }
 
@@ -496,14 +480,17 @@ textarea:focus {
     align-items: center;
     padding: 0 155px;
     height: 70px;
-    background-color: #fff;
+    box-shadow: 0px 10px 27px -17px #0a1b38;
+    background-color: #102344;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   /* Header and toolbar section */
   .container1 {
     background-color: #fff;
-    position: relative;
-    height: 916px;
+     height: 916px;
     width: 100%;
     border-bottom-left-radius: 100px;
     background-image: url(./images/Desk_Head.png);
@@ -570,22 +557,7 @@ textarea:focus {
     height: 600px;
   }
 
-  nav a:link,
-  nav a:visited,
-  nav a:hover,
-  nav a:active {
-    text-decoration: none;
-    color: #6070ff;
-  }
-
-  .category li {
-    background-color: #ebebff;
-    border-radius: 5px;
-    padding: 4px 12px;
-    font-size: 12px;
-  }
-
-  .card-sub li {
+   .card-sub li {
     color: #7a869a;
     font-size: 18px;
   }
@@ -603,7 +575,9 @@ textarea:focus {
   .desktop-menu-list li a:hover,
   .desktop-menu-list li a:active {
     text-decoration: none;
-    color: #344563;
+    color: rgb(164,200,33);
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .logo {
