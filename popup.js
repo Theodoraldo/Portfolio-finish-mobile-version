@@ -45,15 +45,15 @@ const cardData = [
 
   {
     id: 3,
-    header: 'Multi-Post Stories',
+    header: 'Countries API',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
-    cardImg: 'images/Professional_painting.png',
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,<br><br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technology: ['html', 'css', 'javaScript'],
-    live_view: '#',
-    code_view: '#',
+    caption2: 'Front End Dev',
+    caption3: '2023',
+    cardImg: 'images/React_Capstone_Mobile.gif',
+    content: 'A capstone that depicts information about countries via a RESTful API. Their population, landmarks, area, longitude and latitude and a host of others.<br><br> When the application first loads, it displays the continents in which countries can be found. Upon clicking on the chosen continent displays all countries under the said continent',
+    technology: ['jsx', 'css', 'react', 'redux'],
+    live_view: 'https://country-metrics-tm34.onrender.com/',
+    code_view: 'https://github.com/Theodoraldo/react-capstone-metrics',
   },
 ];
 
@@ -93,13 +93,13 @@ const firstData = [
 
   {
     id: 3,
-    header: 'Multi-Post Stories',
+    header: 'Countries API',
     caption1: 'CANOPY',
-    caption2: 'Back End Dev',
-    caption3: '2015',
-    cardImg: 'images/Professional_painting.png',
-    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technology: ['html', 'css', 'javaScript'],
+    caption2: 'Front End Dev',
+    caption3: '2023',
+    cardImg: 'images/React_Capstone.png',
+    content: 'A project that depicts information about countries via a RESTful API. Their population, landmarks, area, longitude and latitude and a host of others.',
+    technology: ['jsx', 'css', 'react', 'redux'],
   },
 ];
 
