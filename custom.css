@@ -23,6 +23,7 @@ nav {
   align-items: center;
   padding: 14px;
   background-color: #fff;
+  z-index: 10;
 }
 
 .d-menu {
@@ -31,6 +32,11 @@ nav {
 
 .m-menu {
   display: none;
+  z-index: 50;
+}
+
+.hero-span {
+  color: rgb(164, 200, 33);
 }
 
 .show-menu {
@@ -81,15 +87,6 @@ nav {
   right: 15px;
   color: #fff;
   font-size: 25px;
-}
-
-.mobile_skill {
-  display: block;
-  margin-top: 20px;
-}
-
-.desktop_skill {
-  display: none;
 }
 
 .logo {
@@ -174,23 +171,8 @@ nav {
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
-  width: 86%;
+  width: 90%;
   margin: 0 auto;
-}
-
-.card-body:hover {
-  animation-name: card-body;
-  animation-duration: 4s;
-}
-
-@keyframes card-body {
-  from {
-    background-color: #396df2;
-  }
-
-  to {
-    background-color: #6ab2fa;
-  }
 }
 
 /* Popup Styling start */
@@ -245,8 +227,17 @@ nav {
   margin-left: 5px;
 }
 
-/* Popup Styling End */
+.live a:active,
+.live a:link,
+.live a:visited,
+.source a:active,
+.source a:link,
+.source a:visited {
+  text-decoration: none;
+  color: #396df2;
+}
 
+/* Popup Styling End */
 .card-header {
   color: #172b4d;
   font-weight: 700;
@@ -270,6 +261,7 @@ nav {
   color: #6070ff;
   margin-top: 16px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -307,7 +299,7 @@ nav {
 
 .show {
   margin-top: 16px;
-  padding: 12px;
+  padding: 15px;
   border-radius: 10px;
   border: 1px solid #396df2;
   color: #396df2;
@@ -317,10 +309,65 @@ nav {
 }
 
 .show:hover {
-  border: 1px solid #6070ff;
   color: white;
+  cursor: pointer;
+}
+
+.show:hover {
+  border: 1px solid #6070ff;
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.to_top {
+  margin-top: 16px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(80, 163, 78);
+  font-size: 14px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 10px;
+  gap: 15px;
+}
+
+.skills-head {
+  text-align: center;
+  margin: 40px 10px;
+  font-size: 36px;
+  color: rgb(83, 82, 82);
+}
+
+.individual-skill {
+  display: flex;
+  flex-direction: column;
+  background-color: #edeff1;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+  color: rgb(53, 49, 49);
+}
+
+.individual-skill:hover {
+  cursor: pointer;
+  background-color: #b8cde2;
+}
+
+.to_top:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(13, 173, 7);
+  cursor: pointer;
 }
 
 .show:active {
@@ -339,7 +386,7 @@ nav {
 .about-banner {
   background-color: #fff;
   width: 100%;
-  height: 1263px;
+  height: auto;
   margin: auto;
   border-top-right-radius: 80px;
 }
@@ -378,13 +425,26 @@ nav {
   gap: 12px;
 }
 
+.aboutme-gif {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.aboutme-gif img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+}
+
 /* Contact form */
 .contact-mobile {
   width: 100%;
-  height: 779px;
   background-color: #6070ff;
   margin: 0 auto;
-  margin-top: -106px;
   border-top-left-radius: 100px;
   color: #fff;
   display: flex;
@@ -463,8 +523,9 @@ textarea:focus {
   outline: none;
 }
 
-/* Large devices (laptops/desktops, 769px and up) */
-@media only screen and (min-width: 768px) {
+/* Large devices (ipod, 769px and up) */
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+
   header i {
     display: block;
   }
@@ -481,9 +542,118 @@ textarea:focus {
     padding: 0 155px;
     height: 70px;
     box-shadow: 0 10px 27px -17px #0a1b38;
-    background-color: #102344;
-    position: fixed;
-    top: 0;
+    background-color: #102344fa;
+    width: 100%;
+  }
+
+  .d-menu {
+    display: block;
+  }
+
+  .m-menu {
+    display: none;
+  }
+
+  #menu,
+  #close {
+    display: none;
+  }
+
+  .header-banner-title {
+    width: 500px;
+  }
+
+  .header-banner-info {
+    font-size: 16px;
+  }
+
+  .header-banner {
+    width: 80%;
+    margin: auto;
+  }
+
+  .desktop-menu-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .iconicon {
+    display: none;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  .header-details > a {
+    margin-right: 20px;
+  }
+
+  .mobile-cat {
+    font-size: 15px;
+  }
+  .d-menu ul li {
+    list-style-type: none;
+  }
+
+  .desktop-menu-list li a {
+    text-decoration: none;
+  }
+
+  .desktop-menu-list li a:link,
+  .desktop-menu-list li a:visited,
+  .desktop-menu-list li a:hover,
+  .desktop-menu-list li a:active {
+    text-decoration: none;
+    text-shadow: -4px 0px 8px rgba(255,250,250,0.68);
+    color: rgb(164, 200, 33);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .model-button {
+    font-size: 12px;
+  }
+
+  .model-button a {
+    list-style-type: none;
+    color: #396df2;
+    text-decoration: none;
+  }
+
+  .skills {
+    margin: auto 20px 50px;
+  }
+
+  .model-body {
+    width: 680px;
+    height: auto;
+  }
+
+  .model-content p {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (laptops/desktops, 769px and up) */
+@media only screen and (min-width: 992px) {
+  header i {
+    display: block;
+  }
+
+  header {
+    width: 100%;
+    margin: auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 155px;
+    height: 70px;
+    box-shadow: 0 10px 27px -17px #0a1b38;
+    background-color: #102344fa;
     width: 100%;
   }
 
@@ -498,14 +668,6 @@ textarea:focus {
     background-size: contain;
     background-position: center;
     overflow: hidden;
-  }
-
-  .mobile_skill {
-    display: none;
-  }
-
-  .desktop_skill {
-    display: block;
   }
 
   .d-menu {
@@ -553,8 +715,8 @@ textarea:focus {
   }
 
   .model-body {
-    width: 680px;
-    height: 600px;
+    width: 750px;
+    height: auto;
   }
 
   .card-sub li {
@@ -575,6 +737,7 @@ textarea:focus {
   .desktop-menu-list li a:hover,
   .desktop-menu-list li a:active {
     text-decoration: none;
+    text-shadow: -4px 0px 8px rgba(255,250,250,0.68);
     color: rgb(164, 200, 33);
     font-size: 20px;
     font-weight: bold;
@@ -689,8 +852,8 @@ textarea:focus {
   .about-banner {
     background-color: #fff;
     width: 100%;
-    height: 924px;
     margin: 0 auto;
+    padding-bottom: 40px;
     border-top-right-radius: 80px;
   }
 
@@ -730,12 +893,16 @@ textarea:focus {
     gap: 12px;
   }
 
+  .skills {
+    width: 70%;
+    margin: auto auto 50px;
+  }
+
   .contact-desk {
     width: auto;
     height: 846px;
     background-color: #6070ff;
     margin: 0 auto;
-    margin-top: -256px;
     border-top-left-radius: 100px;
     color: #fff;
     display: flex;

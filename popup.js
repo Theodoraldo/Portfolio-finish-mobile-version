@@ -6,6 +6,45 @@ const showButton = document.getElementsByClassName('popBtn');
 const cardData = [
   {
     id: 0,
+    header: 'Fix-Mate',
+    caption1: 'CANOPY',
+    caption2: 'Front & Back End Dev',
+    caption3: '2023',
+    cardImg: 'images/fix-mate.png',
+    content: 'Fix Mate is committed to making everyday life more convenient by connecting users with trusted service providers. It is a one-stop platform for finding, booking, and reviewing services, all from the comfort of your home and office.',
+    technology: ['rails', 'ruby', 'tailwindcss', 'react', 'redux'],
+    live_view: 'https://fixmate.netlify.app/',
+    code_view: 'https://github.com/Theodoraldo/fix-mate-frontend',
+  },
+
+  {
+    id: 1,
+    header: 'Pharma-APP',
+    caption1: 'CANOPY',
+    caption2: 'Front & Back End Dev',
+    caption3: '2023',
+    cardImg: 'images/pharma-app.png',
+    content: 'Pharma-APP help pharmacies to input, manage, and process prescriptions efficiently. The app tracks medication stock levels, expiration dates, and alerts for low inventory. It helps in automating reordering processes and ensures medicines are always available for customers.',
+    technology: ['C#', 'DevExpress', 'MySQL', 'Dapper'],
+    live_view: 'https://www.youtube.com/watch?si=_bZ9YlpWMA--ON0i&v=CfdTZIkohGA&feature=youtu.be',
+    code_view: 'https://github.com/Theodoraldo/Pharmacy_App',
+  },
+
+  {
+    id: 2,
+    header: 'Countries API',
+    caption1: 'CANOPY',
+    caption2: 'Front End Dev',
+    caption3: '2023',
+    cardImg: 'images/React_Capstone_Mobile.gif',
+    content: 'A capstone that depicts information about countries via a RESTful API. Their population, landmarks, area, longitude and latitude and a host of others.<br><br> When the application first loads, it displays the continents in which countries can be found. Upon clicking on the chosen continent displays all countries under the said continent',
+    technology: ['jsx', 'css', 'react', 'redux'],
+    live_view: 'https://country-metrics-tm34.onrender.com/',
+    code_view: 'https://github.com/Theodoraldo/react-capstone-metrics',
+  },
+
+  {
+    id: 3,
     header: 'Capstone Project',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -18,7 +57,7 @@ const cardData = [
   },
 
   {
-    id: 1,
+    id: 4,
     header: 'Leaderboard Project',
     caption1: 'CANOPY',
     caption2: 'Front and Back End Dev',
@@ -31,7 +70,7 @@ const cardData = [
   },
 
   {
-    id: 2,
+    id: 5,
     header: 'Math Magician',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -42,24 +81,44 @@ const cardData = [
     live_view: 'https://math-magicians-f05j.onrender.com/',
     code_view: 'https://github.com/Theodoraldo/math-magicians',
   },
-
-  {
-    id: 3,
-    header: 'Countries API',
-    caption1: 'CANOPY',
-    caption2: 'Front End Dev',
-    caption3: '2023',
-    cardImg: 'images/React_Capstone_Mobile.gif',
-    content: 'A capstone that depicts information about countries via a RESTful API. Their population, landmarks, area, longitude and latitude and a host of others.<br><br> When the application first loads, it displays the continents in which countries can be found. Upon clicking on the chosen continent displays all countries under the said continent',
-    technology: ['jsx', 'css', 'react', 'redux'],
-    live_view: 'https://country-metrics-tm34.onrender.com/',
-    code_view: 'https://github.com/Theodoraldo/react-capstone-metrics',
-  },
 ];
 
 const firstData = [
   {
     id: 0,
+    header: 'Fix-Mate',
+    caption1: 'CANOPY',
+    caption2: 'Front & Back End Dev',
+    caption3: '2023',
+    cardImg: 'images/fix-mate.png',
+    content: 'Fix Mate is committed to making everyday life more convenient by connecting users with trusted service providers. It is a one-stop platform for finding, booking, and reviewing services, all from the comfort of your home and office.',
+    technology: ['rails', 'ruby', 'tailwindcss', 'react', 'redux'],
+  },
+
+  {
+    id: 1,
+    header: 'Pharma-APP',
+    caption1: 'CANOPY',
+    caption2: 'Front & Back End Dev',
+    caption3: '2023',
+    cardImg: 'images/pharma-app.png',
+    content: 'The app tracks medication stock levels, expiration dates, and alerts for low inventory. It helps in automating reordering processes and ensures medicines are always available for customers.',
+    technology: ['C#', 'DevExpress', 'MySQL', 'Dapper'],
+  },
+
+  {
+    id: 2,
+    header: 'Countries API',
+    caption1: 'CANOPY',
+    caption2: 'Front End Dev',
+    caption3: '2023',
+    cardImg: 'images/React_Capstone.png',
+    content: 'A project that depicts information about countries via a RESTful API. Their population, landmarks, area, longitude and latitude and a host of others.',
+    technology: ['jsx', 'css', 'react', 'redux'],
+  },
+
+  {
+    id: 3,
     header: 'Capstone Project',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -70,7 +129,7 @@ const firstData = [
   },
 
   {
-    id: 1,
+    id: 4,
     header: 'Leaderboard Project',
     caption1: 'CANOPY',
     caption2: 'Front and Back End Dev',
@@ -81,7 +140,7 @@ const firstData = [
   },
 
   {
-    id: 2,
+    id: 5,
     header: 'Math Magicians',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -90,22 +149,11 @@ const firstData = [
     content: 'The Math Magicians application is calculator built using React and freedom quotes from renowned people across the globe.',
     technology: ['jsx', 'css', 'react', 'redux'],
   },
-
-  {
-    id: 3,
-    header: 'Countries API',
-    caption1: 'CANOPY',
-    caption2: 'Front End Dev',
-    caption3: '2023',
-    cardImg: 'images/React_Capstone.png',
-    content: 'A project that depicts information about countries via a RESTful API. Their population, landmarks, area, longitude and latitude and a host of others.',
-    technology: ['jsx', 'css', 'react', 'redux'],
-  },
 ];
 
 cards.innerHTML = firstData.map((x) => `<div class="card-body">
     <div class="card-img swap">
-      <img src="${x.cardImg}" width="100%" height="100%"/>       
+      <img src="${x.cardImg}" width="100%" height="80%"/>       
     </div>
     <div>
       <h2 class="card-header">${x.header}</h2>
@@ -116,9 +164,9 @@ cards.innerHTML = firstData.map((x) => `<div class="card-body">
       </ul>
       <div class="card-content">
         <p>${x.content}</p>
-        <ul class="category">
+        <div class="category">
           ${x.technology.map((item) => `<li>${item}</li>`).join('')}
-        </ul>
+        </div>
         <button class="popBtn show">See project</button>
       </div>
     </div>
