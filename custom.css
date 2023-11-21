@@ -148,6 +148,16 @@ nav {
   margin-right: 20px;
 }
 
+.live a:active,
+.live a:link,
+.live a:visited,
+.source a:active,
+.source a:link,
+.source a:visited {
+  text-decoration: none;
+  color: #396df2;
+}
+
 .mobile-menu-list li a:link,
 .mobile-menu-list li a:visited,
 .mobile-menu-list li a:hover,
@@ -227,16 +237,6 @@ nav {
   margin-left: 5px;
 }
 
-.live a:active,
-.live a:link,
-.live a:visited,
-.source a:active,
-.source a:link,
-.source a:visited {
-  text-decoration: none;
-  color: #396df2;
-}
-
 /* Popup Styling End */
 .card-header {
   color: #172b4d;
@@ -309,14 +309,11 @@ nav {
 }
 
 .show:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.show:hover {
   border: 1px solid #6070ff;
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: white;
+  cursor: pointer;
 }
 
 .to_top {
@@ -435,8 +432,8 @@ nav {
 }
 
 .aboutme-gif img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -525,7 +522,6 @@ textarea:focus {
 
 /* Large devices (ipod, 769px and up) */
 @media only screen and (min-width: 601px) and (max-width: 990px) {
-
   header i {
     display: block;
   }
@@ -592,8 +588,15 @@ textarea:focus {
   .mobile-cat {
     font-size: 15px;
   }
+
   .d-menu ul li {
     list-style-type: none;
+  }
+
+  .model-button a {
+    list-style-type: none;
+    color: #396df2;
+    text-decoration: none;
   }
 
   .desktop-menu-list li a {
@@ -605,7 +608,7 @@ textarea:focus {
   .desktop-menu-list li a:hover,
   .desktop-menu-list li a:active {
     text-decoration: none;
-    text-shadow: -4px 0px 8px rgba(255,250,250,0.68);
+    text-shadow: -4px 0 8px rgba(255, 250, 250, 0.68);
     color: rgb(164, 200, 33);
     font-size: 20px;
     font-weight: bold;
@@ -613,12 +616,6 @@ textarea:focus {
 
   .model-button {
     font-size: 12px;
-  }
-
-  .model-button a {
-    list-style-type: none;
-    color: #396df2;
-    text-decoration: none;
   }
 
   .skills {
@@ -737,7 +734,7 @@ textarea:focus {
   .desktop-menu-list li a:hover,
   .desktop-menu-list li a:active {
     text-decoration: none;
-    text-shadow: -4px 0px 8px rgba(255,250,250,0.68);
+    text-shadow: -4px 0 8px rgba(255, 250, 250, 0.68);
     color: rgb(164, 200, 33);
     font-size: 20px;
     font-weight: bold;
