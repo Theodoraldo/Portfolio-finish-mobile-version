@@ -19,19 +19,6 @@ const cardData = [
 
   {
     id: 1,
-    header: 'Pharma-APP',
-    caption1: 'CANOPY',
-    caption2: 'Front & Back End Dev',
-    caption3: '2023',
-    cardImg: 'images/pharma-app.png',
-    content: 'Pharma-APP help pharmacies to input, manage, and process prescriptions efficiently. The app tracks medication stock levels, expiration dates, and alerts for low inventory. It helps in automating reordering processes and ensures medicines are always available for customers.',
-    technology: ['C#', 'DevExpress', 'MySQL', 'Dapper'],
-    live_view: 'https://www.youtube.com/watch?si=_bZ9YlpWMA--ON0i&v=CfdTZIkohGA&feature=youtu.be',
-    code_view: 'https://github.com/Theodoraldo/Pharmacy_App',
-  },
-
-  {
-    id: 2,
     header: 'Countries API',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -44,7 +31,7 @@ const cardData = [
   },
 
   {
-    id: 3,
+    id: 2,
     header: 'Capstone Project',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -57,7 +44,7 @@ const cardData = [
   },
 
   {
-    id: 4,
+    id: 3,
     header: 'Leaderboard Project',
     caption1: 'CANOPY',
     caption2: 'Front and Back End Dev',
@@ -70,7 +57,7 @@ const cardData = [
   },
 
   {
-    id: 5,
+    id: 4,
     header: 'Math Magician',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -97,17 +84,6 @@ const firstData = [
 
   {
     id: 1,
-    header: 'Pharma-APP',
-    caption1: 'CANOPY',
-    caption2: 'Front & Back End Dev',
-    caption3: '2023',
-    cardImg: 'images/pharma-app.png',
-    content: 'The app tracks medication stock levels, expiration dates, and alerts for low inventory. It helps in automating reordering processes and ensures medicines are always available for customers.',
-    technology: ['C#', 'DevExpress', 'MySQL', 'Dapper'],
-  },
-
-  {
-    id: 2,
     header: 'Countries API',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -118,7 +94,7 @@ const firstData = [
   },
 
   {
-    id: 3,
+    id: 2,
     header: 'Capstone Project',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -129,7 +105,7 @@ const firstData = [
   },
 
   {
-    id: 4,
+    id: 3,
     header: 'Leaderboard Project',
     caption1: 'CANOPY',
     caption2: 'Front and Back End Dev',
@@ -140,7 +116,7 @@ const firstData = [
   },
 
   {
-    id: 5,
+    id: 4,
     header: 'Math Magicians',
     caption1: 'CANOPY',
     caption2: 'Front End Dev',
@@ -176,8 +152,7 @@ cards.innerHTML = firstData.map((x) => `<div class="card-body">
 for (let i = 0; i < showButton.length; i += 1) {
   showButton[i].addEventListener('click', () => {
     body.style.display = 'block';
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    body.style.zIndex = 4;
 
     popUp.innerHTML = `
         <section id="model-section">

@@ -529,6 +529,9 @@ textarea:focus {
   header {
     width: 100%;
     margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 3;
   }
 
   nav {
@@ -641,6 +644,9 @@ textarea:focus {
   header {
     width: 100%;
     margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 3;
   }
 
   nav {
