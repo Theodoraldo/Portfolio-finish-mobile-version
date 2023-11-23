@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="76" height="76">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="76" height="80">
   <path fill="#9B1010" d="M42 14L40 40 14 42z" />
   <path fill="#B71C1C" d="M28 28L40 40 42 14z" />
   <path fill="#C62828" d="M24 12.336A22.621 11.664 0 1 0 24 35.664A22.621 11.664 0 1 0 24 12.336Z" transform="rotate(-45.001 24 24)" />
